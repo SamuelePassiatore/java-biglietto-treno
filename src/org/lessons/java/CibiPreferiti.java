@@ -13,9 +13,15 @@ public class CibiPreferiti {
         // Ranking bottom
         System.out.println("Cibo preferito ma non troppo: " + cibiPreferiti[cibiPreferiti.length - 1]);
         
-        // Ranking middle
         int posizioneMedia = cibiPreferiti.length / 2;
-        System.out.println("Il cibo di mezza classifica è: " + cibiPreferiti[posizioneMedia]);
+        String posizioneMediaPrima = cibiPreferiti[posizioneMedia];
+        System.out.println("Il cibo di mezza classifica è: " + posizioneMediaPrima);
+        // Ranking middle
+        if (cibiPreferiti.length % 2 == 0) {
+        	String posizioneMediaSeconda = cibiPreferiti[posizioneMedia - 1];
+            System.out.println("Il secondo cibo di mezza classifica è: " + posizioneMediaSeconda); 
+        } 
+      
      
 	}
 }
