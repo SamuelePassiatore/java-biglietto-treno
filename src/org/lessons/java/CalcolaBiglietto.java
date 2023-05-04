@@ -1,12 +1,10 @@
 package org.lessons.java;
 
 import java.util.Scanner;
-import java.text.DecimalFormat;
 
 public class CalcolaBiglietto {
 	public static void main(String[] args){
 		Scanner scanner = new Scanner(System.in);
-		DecimalFormat df = new DecimalFormat("#.##");
 		
 		// Kms number
 		System.out.println("Inserisci il numero di chilometri che vuoi percorrere: ");
@@ -27,7 +25,7 @@ public class CalcolaBiglietto {
         }
 
         // Result
-        System.out.println("Il prezzo del biglietto è: " + df.format(fullPrice) + " €");
+        System.out.println("Il prezzo del biglietto è: " + String.format("%.2f",fullPrice) + " €");
 
         scanner.close();
 	}
