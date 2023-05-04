@@ -21,6 +21,16 @@ public class CheckGuest {
 	            }
 	        }
 	        
+	        // While loop
+	        int i = 0;
+	        while (i < guestsList.length) {
+	            if (guestsList[i].equals(name)) {
+	                isGuest = true;
+	                break;
+	            }
+	            i++;
+	        }
+	        
 	        // Response to user
 	        if (isGuest) {
 	            System.out.println("Benvenuto alla festa!");
